@@ -1,0 +1,16 @@
+# MindBridge backend dependencies (all free / open-source)
+# PyTorch (CPU build) is installed separately by scripts/setup.bat:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9
+python-dotenv>=1.0
+cryptography>=42
+httpx>=0.27
+numpy>=1.26
+transformers>=4.44
+safetensors>=0.4
+pytest>=8.0
+# speech-to-text with language auto-detection (Whisper via CTranslate2)
+faster-whisper>=1.0   # (its PyAV dependency is only used by tests; the app feeds audio arrays directly)
